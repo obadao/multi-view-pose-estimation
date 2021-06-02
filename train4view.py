@@ -158,7 +158,7 @@ def train(train_loader, net, Mean_2D, Mean_Delta, Mean_3D, SD_2D, SD_Delta, SD_3
 
         pts3dg = pts3dg.narrow(1,1,16) #remove pelvis center
         pts3dg = pts3dg.contiguous()
-        pts3dg = torch.autograd.Variable(pts3dg.cuda(async=True),requires_grad=False) 
+        pts3dg = torch.autograd.Variable(pts3dg.cuda(non_blocking=True),requires_grad=False) 
 
         R1 = torch.autograd.Variable(R1.cuda(non_blocking=True),requires_grad=False)
         R2 = torch.autograd.Variable(R2.cuda(non_blocking=True),requires_grad=False)
