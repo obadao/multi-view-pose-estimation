@@ -23,7 +23,7 @@ import PXIO
 from Plot import Plot2d, Plot3d
 
 evaluate_mode= False
-demo_mode= False
+demo_mode= True
 
 
 cudnn.benchmark = True 
