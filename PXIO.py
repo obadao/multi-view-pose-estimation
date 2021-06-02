@@ -90,8 +90,8 @@ def SaveAugPtsToFile(pts_spath, pts_aug_objs):
 
 def WriteFloatToFile(path,lines):
     with open(path,'w') as fd:
-        print lines.shape
-        print lines.ndim 
+        print (lines.shape)
+        print (lines.ndim) 
 
 def DeleteThenCreateFolder(dir):
     if os.path.exists(dir):
