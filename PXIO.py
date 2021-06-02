@@ -104,4 +104,4 @@ def CreateFolderIfNotExist(dir):
 
 
 if __name__=='__main__':
-    print 'Python IO Lib by Xi Peng'
+    print ('Python IO Lib by Xi Peng')
